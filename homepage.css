@@ -1,0 +1,118 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-spacing: 0;
+    text-decoration: none;
+    
+    }
+    
+    
+    :root{
+        --main-padding:10px;
+    }
+    
+    
+    body {
+        margin: 0;
+        background-color:#979797;
+        font-family:Arial, Helvetica, sans-serif;
+    }    
+    
+    
+    
+    
+    img{
+        border: 0;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    .container {
+        margin: 0 auto;
+        height: 100vh;
+        background-color: #979797;
+        font-size: 50%;
+        color: #1E1E1E;
+        text-align: center;
+        /* width: 100%;  */
+        /* max-width: 800px;  */
+        padding: 10px 20px;
+    
+        display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.7fr
+         5fr 
+         5fr 
+         4fr 
+         5.5fr 
+         4fr 
+         2fr;
+    
+        grid-template-areas:
+            "nav nav nav nav"
+            "main main main main"
+            "content1 content1 content1 content1"
+            "content2 content2 content2 content2"
+            "content3 content3 content3 content3"
+            "content4 content4 content4 content4"
+            "footer footer footer footer";
+    }
+    
+    nav {
+        grid-area: nav;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .menu{
+        color: #FFF;
+        text-align: center;
+        /* font-family: Poppins; */
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        /* width: fit-content; */
+        display: flex;
+        align-items: center;
+    }
+
+    .menu > p , a{
+        padding: 0 10px;
+        color: #FFF;
+    }
+
+    .menu > p ,a:hover {
+        transition: 0.5s;
+        color: #ffffffaa;
+    }
+    main {
+        grid-area: main;
+    }
+    
+    .content1 {
+        grid-area: content1;
+    }
+    
+    .content2 {
+        grid-area: content2;
+    }
+    
+    .content3 {
+        grid-area: content3;
+    }
+    
+    .content4 {
+        grid-area: content4;
+    }
+    
+    footer {
+        grid-area: footer;
+    }
+    
