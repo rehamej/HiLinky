@@ -151,7 +151,8 @@
   font: 900 2.5vw "Poppins", sans-serif;
   text-transform: uppercase;
   /* position: relative; */
-  width: 718px;
+  /* width: 718px; */
+  width: -webkit-fill-available;
 }
 
 .create-sec {
@@ -159,7 +160,8 @@
   text-align: left;
   font: 400 1.3vw "Poppins", sans-serif;
   /* position: relative; */
-  width: 655px;
+  /* width: 655px; */
+  max-width: 655px;
 }
 
 .group-6 {
@@ -286,6 +288,9 @@
         border-bottom-style: solid ;
         border-bottom-color: #6e6e6e64;
         border-bottom-width: 2px;
+
+        display: flex;
+        flex-direction: column;
     }
 
     .image-placeholder {
