@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
 
     margin: 0;
@@ -111,4 +112,119 @@
         .content2{
             grid-area: content2;
             background-color: white;
+=======
+* {
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-spacing: 0;
+    text-decoration: none;
+    
+    }
+    
+    
+    :root{
+        --main-padding:10px;
+    }
+    
+    
+    body {
+        margin: 0;
+        background-color:#979797;
+        font-family:Arial, Helvetica, sans-serif;
+    }    
+    
+    
+    
+    
+    img{
+        border: 0;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    .container {
+            margin: 0 auto;
+            height: 100vh;
+            background-color: #979797;
+            font-size: 50%;
+            color: #1E1E1E;
+            text-align: center;
+            /* width: 100%;  */
+            /* max-width: 800px;  */
+            /* padding: 20px 30px; */
+        
+            display: grid;
+    
+        grid-template-columns: 1fr 1.5fr;
+            grid-template-rows: 7fr
+             ;
+        
+            grid-template-areas:
+    
+            "content1 content2";
+        }
+    
+        .content1{
+            grid-area: content1;
+        }
+    
+        .SignUp{
+            display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 28%;
+        width: fit-content;
+        align-items: center;
+        margin: 0 auto;
+        gap: 20px;
+        }
+    
+        .first-p{
+            color: var(--black, #000000);
+            text-align: center;
+            font: 700 3vw "Inter", sans-serif;
+            align-self: stretch;
+        }
+    
+        .sec-p{
+            color: rgb(118, 118, 118);
+            font: var(--link-l, 500 1.3vw "Inter", sans-serif);
+            align-self: stretch;
+            text-align: left;
+        }
+    
+        .button {
+      background: var(--black, #000000);
+      border-radius: 8px;
+      padding: 0.6vw 7vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* width: 343px;
+      height: 59px; */
+      transition: all 0.5s ease-in-out; 
+    }
+    
+    .button:hover , .button2:hover{
+        transform: scale(1.1);
+    }
+    
+    .label {
+      color: var(--white, #ffffff);
+      text-align: center;
+      font: var(--heading-3, 700 1.1vw/24px "Inter", sans-serif);
+      /* position: relative; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+        
+        .content2{
+            grid-area: content2;
+            background-color: white;
+>>>>>>> f9c2a71e4219742f711bb6dfdc5652fa19044d0d
         }
