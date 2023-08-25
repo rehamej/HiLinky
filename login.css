@@ -1,3 +1,4 @@
+
 * {
 
     margin: 0;
@@ -153,18 +154,4 @@
         font-size: 0.875rem;
         line-height: 1.25rem;
         text-align: center;
-      }
-      
-      .signup-link a {
-        text-decoration: underline;
-      }
-      
-      .submit a.active {
-        background-color: #04AA6D;
-        color: white;
-      }
-      
-      .submit :hover:not(.active) {
-        /* background-color: #555; */
-        color: rgba(255, 255, 255, 0.512);
       }
