@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+</head>
+
+<link rel="stylesheet" href="login.css">
+<style>
+
+</style>
+<body>
+
+    <div class="container">
+
+
+        <div class="content1">
+            <div style="width: 10vw; height: 89px; background-color: white;position: absolute;
+            left: 30px;
+            top: 30px; border: 1px; border-color: black; border-style: double;"></div>
+        </div>
+
+        <div class="content2">
+
+
+
+
+
+        <div style="    display: inline-flex;
+        align-items: center;">
+
+            <div class="first-half">
+
+         <p class="form-title" style="    text-align: left;">
+            <a href="#"><img src="https://i.ibb.co/TWkszJP/image.png" alt="" width="20px"></a>
+            Log In <br>
+            <span style="color: #9CA3AF;font-size: 0.8vw;font-weight: 100;padding-left: 20px;">create your account</span>
+        </p>  
+
+    <form class="form" id="form">
+
+     
+        
+        <div class="input-container">
+            <input placeholder="First Name" type="text" id="name">
+        </div>
+
+        
+        <div class="input-container">
+            <input placeholder="password" type="password" id="email" required>
+        </div>
+
+
+        <div style="display: inline-flex;    justify-content: space-between;    align-items: center;">
+          <div> <input type="checkbox"> 
+           
+            <a href="" style="font-size: 0.4vw; color: #000; font-weight: 600;margin-bottom: 8px;">remember me</a></div>
+
+           <span><a href="#" style="color: #000; text-decoration: underline;"  id="forgotPassword">Forgot Password?</a></span>
+        </div>
+
+
+
+        <button  class="submit" type="submit" style="width: auto;   padding: 8px 16px ;  width: 365px;
+        height: 59px;background-color: #000; cursor: pointer;color: aliceblue;">Log In</button>
+
+
+
+
+<p class="signup-link">
+    No account?
+    <a href="">Log In</a>
+
+
+
+    <div id="message" style="font-size: 1.3vw;padding: 8px 16px;text-align: center;gap: 8px;"></div>   
+
+    </form>
+</div>
+
+</div>
+
+
+
+
+
+    <script>
+        const form = document.getElementById('form');
+        const messageDiv = document.getElementById('message');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+
+            if (name && email) {
+                messageDiv.textContent = 'Registration completed successfully!';
+            } else {
+                messageDiv.textContent = 'Please fill out all fields.';
+            }
+        });
+
+
+        const forgotPasswordLink = document.getElementById('forgotPassword');
+
+        forgotPasswordLink.addEventListener('click', function(event) {
+            event.preventDefault();
+
+            // Display reset password message
+            messageDiv.textContent = 'Reset password email has been sent.';
+        });
+    </script>
+</body>
+
+</html>
