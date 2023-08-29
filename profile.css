@@ -80,11 +80,25 @@
         .round {
             background: #b4b4b4;
             border-radius: 50%;
-            width: 10vw;
-            height: 10vw;
-            margin-bottom: 10px;
+            width: 6.9vw;
+            height: 6.9vw;
+            /* margin-bottom: 70px; */
+            /* margin: 10px 20px 75px 10px; */
           }
           
+          .main-round{
+            /* background: #b4b4b4; */
+            border-radius: 50%;
+            width: 9vw;
+            height: 9vw;
+            /* margin: 20px; */
+            margin-bottom: 20px;
+          }
+
+          .list{
+            padding-left: 10%;
+          }
+
           .list > li{
             font-size: 1.3vw;
             list-style-type: none;
@@ -92,33 +106,33 @@
             cursor: pointer;
             text-align: left;
             font-weight: 600;
-            color:  rgba(0, 0, 0, 0.47);
+            color:  #142b38;
           }
 
           .list > li > .icon{
-            fill:  rgba(0, 0, 0, 0.47);
+            fill:  #142b38;
             margin-bottom: -4px;
             cursor: pointer;
             padding: 0 10px;
           }
           .list > li:active {
-            color:  black;
+            color:  rgba(239, 99, 88, 1);
             .icon{
-            fill:  black;                
+            fill:  #286f8c;                
             }
 
           }
 
           .pencil{
 
-            fill:  black;             
+            fill:  #286f8c;             
             margin-bottom: -41px;
             cursor: pointer;
             padding: 0 10px;
           }
 
           .pencil:active{
-            fill:  rgba(0, 0, 0, 0.47); 
+            fill:  #286f8c; 
           }
 
           .plus{
@@ -183,7 +197,7 @@
         }
 
         .button {
-            background: var(--black, #000000);
+            background: #286f8c;
             border-radius: 8px;
             padding: 8px 16px;
             width: 18vw;
@@ -444,7 +458,7 @@ input[type=text], input[type=password] {
             text-align: left;
             line-height: 35px;
             display: inline-flex;
-            align-items: flex-end;
+            align-items: flex-start;
             justify-content: space-evenly;
             width: -webkit-fill-available;
           }
@@ -464,7 +478,7 @@ input[type=text], input[type=password] {
             text-align: left;
             line-height: 35px;
             display: inline-flex;
-            align-items: flex-end;
+            align-items: flex-start;
             justify-content: space-evenly;
             width: -webkit-fill-available;
           }
