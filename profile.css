@@ -114,6 +114,8 @@
             margin-bottom: -4px;
             cursor: pointer;
             padding: 0 10px;
+            width: 1.9vw;
+            height: 1.9vw;
           }
           .list > li:active {
             color:  rgba(239, 99, 88, 1);
@@ -129,6 +131,8 @@
             margin-bottom: -41px;
             cursor: pointer;
             padding: 0 10px;
+            width: 1.9vw;
+            height: 1.9vw;
           }
 
           .pencil:active{
@@ -188,8 +192,11 @@
             /* border-bottom: 0.6px;
             border-color: #1E1E1E;
             border-style: double;     */
-            line-height: 42px;
+            line-height: 2.7vw;
 
+        }
+        .content3 > h1{
+          margin-bottom: 7px;
         }
 
         ul.links > li{
@@ -203,6 +210,10 @@
             width: 18vw;
             height: 4.5vw;
             cursor: pointer;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            justify-content: center;
           }
           .label {
             color: var(--white, #ffffff);
@@ -352,6 +363,7 @@ input[type=text], input[type=password] {
     content: "";
     clear: both;
     display: table;
+    
   }
   
 
@@ -370,9 +382,31 @@ input[type=text], input[type=password] {
       width: -webkit-fill-available !important;
       margin: 15px 0 !important;
     }
+
+    /* .container{
+      grid-template-areas:
+
+      "content1" "content2";
+    } */
   }
 
 /* SEC ONE */
+.rectangle-4803 {
+  background: #f3aa60;
+  border-radius: 52px;
+  width: 68px;
+  height: 25px;
+  padding-top: 7px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.edit {
+  color: #ffffff;
+  text-align: center;
+  font: 600 12px "Inter", sans-serif;
+}
+
+
 
           .cancelbtn{
             background-color: #f1f1f1;
@@ -439,6 +473,7 @@ input[type=text], input[type=password] {
             height: 17.1vw; */
             width: 28%;
             height: 40%;
+            min-width: 300px;
           }
         
         
@@ -498,7 +533,7 @@ input[type=text], input[type=password] {
           }
 
 
-          .modal-content2:hover{
+          .modal-content2:active{
             transform: rotateY(180deg);
           }
 
@@ -522,4 +557,12 @@ input[type=text], input[type=password] {
             border-radius: 9px;
             background-color: transparent;
             width:  2.60vw;
+          }
+
+          .forgot {
+            color:  rgb(241, 125, 116);
+            text-align: left;
+            font: 500 16px/48px "Inter", sans-serif;
+            text-decoration: underline;
+            position: relative;
           }
