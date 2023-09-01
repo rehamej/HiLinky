@@ -278,7 +278,21 @@
         padding-bottom: 90px;
         display: inline-flex;
         align-items: flex-start;
-        background-color: #2d728f;
+        /* background-color: #2d728f; */
+        background: var(
+          --gradient,
+          linear-gradient(
+            180deg,
+            rgba(40, 111, 140, 1) 0%,
+            rgba(149, 190, 207, 1) 100%
+          )
+        );
+        background-image: url(https://i.ibb.co/sF6qMT0/Untitled-Project-3.jpg) ;
+        background-repeat: no-repeat;
+          -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
     }
     
     .rectangle-11 {
