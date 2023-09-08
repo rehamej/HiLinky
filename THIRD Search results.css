@@ -460,24 +460,14 @@ input[type=text], input[type=password] {
             background-color: #286F8C;
             background-image: url(https://i.ibb.co/JWZwZCH/image.png);
             margin: 4% auto 1% auto; /* 5% from the top, 15% from the bottom and centered */
-            /* border: 1px solid #888; */
-            /* width: 30%; Could be more or less, depending on screen size */
-            /* background: #ffffff; */
+
             border-radius: 8px;
             border-style: solid;
             box-shadow: #286f8c6b 0px 8px 24px;
-            /* border-width: 2px; */
-            /* width: 30%; */
-            /* height: 389.08px; */
-            /* position: relative; */
-            /* width: 26.8vw;
-            height: 17.1vw; */
-            /* width: 28%;
-            height: 40%; */
             min-width: 244px;
-            min-height: 220px;
+            min-height: 185px;
             width: 31.3vw;
-            height: 27vw;
+            height: 20vw;
             background-size: cover;
             
           }
@@ -569,6 +559,7 @@ input[type=text], input[type=password] {
     backface-visibility: hidden;
     transform: rotateY(180deg);
     position: absolute;
+    top: -70px; /* HERE */
     bottom: 0%;
     border-radius: 8px;
     border-style: solid;
@@ -576,6 +567,9 @@ input[type=text], input[type=password] {
     background-size: cover;
     width: -webkit-fill-available;
     height: -webkit-fill-available;
+    /* padding-bottom: 50px;
+    height: 20vw; */
+
           }
 
           .social{
