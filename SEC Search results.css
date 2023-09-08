@@ -317,8 +317,8 @@
   /* The dots/bullets/indicators */
   .dot {
     cursor: pointer;
-    height: 1vw;
-    width: 1vw;
+    height: 0.7vw;
+    width: 0.7vw;
     margin: 0 2px;
     background-color: #F3AA60;
     border-radius: 50%;
@@ -358,14 +358,16 @@
 }
 .orange-1 {
   border-radius: 8px;
-  width: 41.3vw;
-  height: 37vw;;
+  /* width: 41.3vw;
+  height: 37vw;; */
   position: relative;
   overflow: hidden;
   box-shadow: 6px 6px 30px 0px rgba(20, 43, 56, 0.3);
   margin: 0 auto;
+  width: 30.3vw;
+  height: 26vw;
   min-width: 290px;
-    min-height: 260px;
+min-height: 260px;
 }
 
 
@@ -382,8 +384,10 @@
     background-size: cover;
   /* background: #ffffff; */
   border-radius: 8px;
-  width: 41.3vw;
-  height: 37vw;;
+  /* width: 34.3vw;
+  height: 30vw; */
+  width: 30.3vw;
+  height: 26vw;
   /* position: relative; */
   box-shadow: 6px 6px 30px 0px rgba(20, 43, 56, 0.3);
   overflow: hidden;
@@ -397,8 +401,8 @@ align-items: flex-start
 .ellipse-647 {
   background: linear-gradient(to left, #d9d9d9, #d9d9d9);
   border-radius: 50%;
-  width: 6.8125vw;
-  height: 6.8125vw;
+  width: 5.0125vw;
+  height: 5.0125vw;
   /* position: absolute; */
   left: 62px;
   top: 79px;
@@ -421,14 +425,14 @@ align-items: flex-start
 .bice-el-shazly {
   color: #286f8c;
   text-align: left;
-  font: 700  1.84375vw "Inter", sans-serif;
+  font: 700  1.44375vw "Inter", sans-serif;
   /* position: relative; */
   align-self: stretch;
 }
 .coo-brmjha {
   color: #7ea9ba;
   text-align: left;
-  font: 600 1.5625vw "Inter", sans-serif;
+  font: 600 1.0625vw "Inter", sans-serif;
   /* position: relative; */
   align-self: stretch;
 }
@@ -457,7 +461,7 @@ align-items: flex-start
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
     align-items: flex-start;
     margin-left: 33px;
     margin-top: 34px;
@@ -486,22 +490,32 @@ top: 29px; */
 .linkedin {
     min-height: 19px;
     min-width: 19px;
+    width: 1.7vw !important;
+    height: 1.7vw !important;
   }
   .subtract {
     min-height: 19px;
     min-width: 19px;
+    width: 1.7vw !important;
+    height: 1.7vw !important;
   }
   .twitter {
     min-height: 19px;
     min-width: 19px;
+    width: 1.7vw !important;
+    height: 1.7vw !important;
   }
   .instagram {
     min-height: 19px;
     min-width: 19px;
+    width: 1.7vw !important;
+    height: 1.7vw !important;
   }
   .subtract2 {
     min-height: 19px;
     min-width: 19px;
+    width: 1.7vw !important;
+    height: 1.7vw !important;
   }
   .clip-path-group {
     min-height: 19px;
@@ -544,7 +558,7 @@ top: 29px; */
     margin-left: 4px;
     color:  #133039;
     font-weight: 500;
-    font-size:  1.25vw;
+    font-size:  1.05vw;
     white-space: nowrap;
   }
 
