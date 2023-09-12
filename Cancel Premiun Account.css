@@ -257,6 +257,9 @@ body {
             line-height: 22px;
             background-color:white;
             /* border-radius: 9px; */
+            
+   
+            min-width: 97px;
         }
     
         .hr{
