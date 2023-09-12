@@ -20,6 +20,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.sidebar::-webkit-scrollbar {
+  display: none;
 }
 
 .sidebar a {
@@ -66,7 +71,6 @@ body {
 
 #main {
   transition: margin-left .5s;
-  padding: 16px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -235,7 +239,7 @@ body {
         
             display: grid;
     
-        grid-template-columns: 0.4fr 2fr;
+        grid-template-columns: 0.34fr 2fr;
             grid-template-rows:  7fr
              ;
         
@@ -257,8 +261,6 @@ body {
             line-height: 22px;
             background-color:white;
             /* border-radius: 9px; */
-            
-   
             min-width: 97px;
         }
     
