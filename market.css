@@ -3,10 +3,12 @@ body {
 }
 
 .sidebar {
+  margin-left: -10px !important;
+  padding-left: 20px !important;
   border-radius: 32px !important;
   height: 100%;
   width: 170px;
-  position: fixed;
+  position: relative;
   z-index: 1;
   top: 0;
   left: 0;
@@ -20,6 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 .sidebar a {
@@ -66,7 +69,6 @@ body {
 
 #main {
   transition: margin-left .5s;
-  padding: 16px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -235,7 +237,7 @@ body {
         
             display: grid;
     
-        grid-template-columns: 0.4fr 2fr;
+        grid-template-columns: 0.34fr 2fr;
             grid-template-rows:  7fr
              ;
         
@@ -256,6 +258,7 @@ body {
             align-items: center;
             line-height: 22px;
             background-color:white;
+            min-width: 97px;
             /* border-radius: 9px; */
         }
     
