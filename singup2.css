@@ -56,10 +56,13 @@
         .content1{
             grid-area: content1;
             background-color: white;
-            background-image: url(https://i.ibb.co/Wt2WWLm/Frame-194.png);
+            background-image: url(https://i.ibb.co/tptFjCG/Web-Photo-Editor.jpg);
             background-size: cover;
             margin: 20px;
             border-radius: 37px;
+            display: flex;
+            min-width: 171px;
+            justify-content: flex-end;
         }
     
         
