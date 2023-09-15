@@ -798,7 +798,8 @@ border-radius: 32px;
 background: #DBEEF4;
 height: 11.484375vw;
 width: 65.703125vw;
-min-width: 315px;
+min-height: 55px;
+min-width: 590px;
 margin: 40px auto;
 
 justify-content: space-evenly
