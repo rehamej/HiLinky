@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Notifications.css">
+    <title>Notifications</title>
+</head>
+<body>
+    <div class="container">
+
+
+        <div class="content1">
+
+
+          <div id="mySidebar" class="sidebar" style=""> <!-- Set initial width to 50px -->
+
+
+            <img src="https://i.ibb.co/Xb90cTS/Group-42177.png" alt="" style="width: 3.9vw; height:  1.73vw; min-width: 45px; min-height: 26px; margin-top: 8px; position: relative ;     right: 40px;" >
+            
+            
+            <span style="display: flex;margin: 10px 0; text-align: center;align-items: center;">
+            
+                <div class="round" style="    margin: 10px 0;"><img src="https://i.ibb.co/sbFTtqR/Rectangle.png" alt="" class="round" "></div>
+            
+            
+            
+             <button class="openbtn" onclick="openNav()" style="margin: 10px 0;">
+            
+            
+                    <svg style="padding-top: 5px; min-width: 17.8px; min-height: 22px;"
+              class="back-arrow"
+              width="2.5625vw"
+              height="2.5625vw"
+              viewBox="0 0 31 31"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.53243 27.138C9.68241 27.2883 9.86059 27.4076 10.0567 27.489C10.2529 27.5704 10.4632 27.6123 10.6756 27.6123C10.8879 27.6123 11.0982 27.5704 11.2944 27.489C11.4905 27.4076 11.6687 27.2883 11.8187 27.138L22.5524 16.4042C22.6722 16.2847 22.7672 16.1428 22.832 15.9865C22.8968 15.8303 22.9302 15.6628 22.9302 15.4936C22.9302 15.3244 22.8968 15.1569 22.832 15.0007C22.7672 14.8444 22.6722 14.7025 22.5524 14.583L11.8187 3.84921C11.1858 3.2163 10.1653 3.2163 9.53243 3.84921C8.89952 4.48213 8.89952 5.50254 9.53243 6.13546L18.8841 15.5L9.51952 24.8646C8.89952 25.4846 8.89952 26.518 9.53243 27.138Z"
+                fill="black"
+              />
+            </svg>
+            </button>  
+            
+            
+            
+              </span>
+            
+            <div class="user" id="userDiv">
+             <h1 style="margin: 5px 0; font-size:  1.8vw; white-space: nowrap;">Nema Alnajjar</h1>
+             <h2 style="    color: #707070;
+             font-weight: 400;
+             padding-bottom: 10px;
+             white-space: nowrap;    margin: 0;font-size:  1.25vw;text-align: center;">@Nema_10  <br> 216 following</h2>
+             </div>
+            
+            
+             <ul class="list" onclick="toggleUserProfile()">
+            
+              <span></span>
+            
+            
+                    <!-- Home -->
+                  <li  style="padding-left: px;"> 
+            
+                    <svg class="icon"
+                    class="home"
+                    width="1.9vw"
+                    height="1.9vw"
+                    viewBox="0 0 50 52"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M26.7678 5.85198C25.7915 4.85533 24.2085 4.85533 23.2322 5.85198L5.73223 23.7166C4.75592 24.7132 4.75592 26.3291 5.73223 27.3258C6.70854 28.3224 8.29146 28.3224 9.26777 27.3258L10 26.5783V43.3857C10 44.7952 11.1193 45.9378 12.5 45.9378H17.5C18.8807 45.9378 20 44.7952 20 43.3857V38.2816C20 36.8721 21.1193 35.7295 22.5 35.7295H27.5C28.8807 35.7295 30 36.8721 30 38.2816V43.3857C30 44.7952 31.1193 45.9378 32.5 45.9378H37.5C38.8807 45.9378 40 44.7952 40 43.3857V26.5783L40.7322 27.3258C41.7085 28.3224 43.2915 28.3224 44.2678 27.3258C45.2441 26.3291 45.2441 24.7132 44.2678 23.7166L26.7678 5.85198Z"
+                      
+                    />
+                    <path
+                      d="M26.7678 5.85198C25.7915 4.85533 24.2085 4.85533 23.2322 5.85198L5.73223 23.7166C4.75592 24.7132 4.75592 26.3291 5.73223 27.3258C6.70854 28.3224 8.29146 28.3224 9.26777 27.3258L10 26.5783V43.3857C10 44.7952 11.1193 45.9378 12.5 45.9378H17.5C18.8807 45.9378 20 44.7952 20 43.3857V38.2816C20 36.8721 21.1193 35.7295 22.5 35.7295H27.5C28.8807 35.7295 30 36.8721 30 38.2816V43.3857C30 44.7952 31.1193 45.9378 32.5 45.9378H37.5C38.8807 45.9378 40 44.7952 40 43.3857V26.5783L40.7322 27.3258C41.7085 28.3224 43.2915 28.3224 44.2678 27.3258C45.2441 26.3291 45.2441 24.7132 44.2678 23.7166L26.7678 5.85198Z"
+                      fill
+                      fill-opacity="0"
+                    /></svg>
+                  <a href="oldlogin.html"><div class="user3" id="userDiv3" > Home</div></a>
+                </li>
+            
+            
+            <!-- Search -->
+                  <li>
+                    <svg  class="icon"
+                    class="search"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 49 49"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M19.5999 9.80039C14.1875 9.80039 9.79995 14.188 9.79995 19.6004C9.79995 25.0128 14.1875 29.4004 19.5999 29.4004C25.0123 29.4004 29.3999 25.0128 29.3999 19.6004C29.3999 14.188 25.0123 9.80039 19.5999 9.80039ZM4.89996 19.6004C4.89996 11.4818 11.4814 4.90039 19.5999 4.90039C27.7185 4.90039 34.2999 11.4818 34.2999 19.6004C34.2999 22.7752 33.2934 25.7149 31.5822 28.1179L43.3823 39.918C44.339 40.8748 44.339 42.426 43.3823 43.3828C42.4255 44.3396 40.8742 44.3396 39.9174 43.3828L28.1174 31.5827C25.7144 33.294 22.7747 34.3004 19.5999 34.3004C11.4814 34.3004 4.89996 27.719 4.89996 19.6004Z"
+                      fill=""
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M19.5999 9.80039C14.1875 9.80039 9.79995 14.188 9.79995 19.6004C9.79995 25.0128 14.1875 29.4004 19.5999 29.4004C25.0123 29.4004 29.3999 25.0128 29.3999 19.6004C29.3999 14.188 25.0123 9.80039 19.5999 9.80039ZM4.89996 19.6004C4.89996 11.4818 11.4814 4.90039 19.5999 4.90039C27.7185 4.90039 34.2999 11.4818 34.2999 19.6004C34.2999 22.7752 33.2934 25.7149 31.5822 28.1179L43.3823 39.918C44.339 40.8748 44.339 42.426 43.3823 43.3828C42.4255 44.3396 40.8742 44.3396 39.9174 43.3828L28.1174 31.5827C25.7144 33.294 22.7747 34.3004 19.5999 34.3004C11.4814 34.3004 4.89996 27.719 4.89996 19.6004Z"
+                      fill=""
+                      fill-opacity="0"
+                    />
+                  </svg><a href="Search.html" style="display: inline;"><div class="user7" id="userDiv7" style="display: none;">Search</div></a></li>  
+            
+            <!-- Cards -->
+                  <li  style="padding-left: px;"> 
+                    <svg  class="icon"
+                    class="solar-card-bold"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 52 52"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M21.6666 8.66699H30.3333C38.5038 8.66699 42.5901 8.66699 45.1273 11.2063C46.956 13.0328 47.4673 15.6632 47.6103 20.042H4.38965C4.53265 15.6632 5.04398 13.0328 6.87265 11.2063C9.40981 8.66699 13.4961 8.66699 21.6666 8.66699ZM30.3333 43.3337H21.6666C13.4961 43.3337 9.40981 43.3337 6.87265 40.7943C4.33331 38.2572 4.33331 34.1708 4.33331 26.0003C4.33331 25.0427 4.33331 24.1413 4.33765 23.292H47.6623C47.6666 24.1413 47.6666 25.0427 47.6666 26.0003C47.6666 34.1708 47.6666 38.2572 45.1273 40.7943C42.5901 43.3337 38.5038 43.3337 30.3333 43.3337ZM13 33.042C12.569 33.042 12.1557 33.2132 11.8509 33.5179C11.5462 33.8227 11.375 34.236 11.375 34.667C11.375 35.098 11.5462 35.5113 11.8509 35.816C12.1557 36.1208 12.569 36.292 13 36.292H21.6666C22.0976 36.292 22.5109 36.1208 22.8157 35.816C23.1204 35.5113 23.2916 35.098 23.2916 34.667C23.2916 34.236 23.1204 33.8227 22.8157 33.5179C22.5109 33.2132 22.0976 33.042 21.6666 33.042H13ZM27.0833 33.042C26.6523 33.042 26.239 33.2132 25.9343 33.5179C25.6295 33.8227 25.4583 34.236 25.4583 34.667C25.4583 35.098 25.6295 35.5113 25.9343 35.816C26.239 36.1208 26.6523 36.292 27.0833 36.292H30.3333C30.7643 36.292 31.1776 36.1208 31.4824 35.816C31.7871 35.5113 31.9583 35.098 31.9583 34.667C31.9583 34.236 31.7871 33.8227 31.4824 33.5179C31.1776 33.2132 30.7643 33.042 30.3333 33.042H27.0833Z"
+                      fill=""
+                    />
+                  </svg><a href="" style="display: inline;"><div class="user5" id="userDiv5" style="display: none;">My Cards</div></a></li>
+            
+            
+            <!-- Market -->
+                  <li style="    margin-left: -11px;"><a href="market.html" style="display: inline;"></a>
+                    <svg  class="icon"
+                    class="shopping-bag"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 50 50"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M25 5C19.4772 5 15 9.47715 15 15V17.5H12.5C11.2261 17.5 10.156 18.4578 10.0153 19.7239L7.5153 42.2239C7.43677 42.9307 7.66294 43.6374 8.13719 44.1673C8.61145 44.6972 9.2889 45 10 45H40C40.7111 45 41.3886 44.6972 41.8628 44.1673C42.3371 43.6374 42.5633 42.9307 42.4847 42.2239L39.9847 19.7239C39.844 18.4578 38.7739 17.5 37.5 17.5H35V15C35 9.47715 30.5228 5 25 5ZM30 17.5V15C30 12.2386 27.7614 10 25 10C22.2386 10 20 12.2386 20 15V17.5H30ZM15 25C15 23.6193 16.1193 22.5 17.5 22.5C18.8807 22.5 20 23.6193 20 25C20 26.3807 18.8807 27.5 17.5 27.5C16.1193 27.5 15 26.3807 15 25ZM32.5 22.5C31.1193 22.5 30 23.6193 30 25C30 26.3807 31.1193 27.5 32.5 27.5C33.8807 27.5 35 26.3807 35 25C35 23.6193 33.8807 22.5 32.5 22.5Z"
+                      fill=""
+                    />
+                  </svg><div class="user9" id="userDiv9" style="display: none;">Market</div></a>
+                </li>
+            
+            <!-- My Subscription -->
+                  <li style="    margin-left: -11px;"><a href="My Subscriptions.html" style="display: inline;"></a>
+                    <svg  class="icon"
+                    class="star"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 51 51"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_533_7684)">
+                      <path
+                        d="M24.5489 2.92705C24.8483 2.00574 26.1517 2.00574 26.4511 2.92705L31.0006 16.9291C31.1345 17.3411 31.5184 17.6201 31.9516 17.6201L46.6743 17.6201C47.643 17.6201 48.0458 18.8597 47.262 19.4291L35.3512 28.0828C35.0007 28.3375 34.8541 28.7888 34.9879 29.2008L39.5375 43.2029C39.8368 44.1242 38.7823 44.8903 37.9986 44.3209L26.0878 35.6672C25.7373 35.4125 25.2627 35.4125 24.9122 35.6672L13.0014 44.3209C12.2177 44.8903 11.1632 44.1242 11.4625 43.2029L16.0121 29.2008C16.1459 28.7888 15.9993 28.3375 15.6488 28.0828L3.73795 19.4291C2.95424 18.8597 3.35702 17.6201 4.32574 17.6201L19.0484 17.6201C19.4816 17.6201 19.8655 17.3411 19.9994 16.9291L24.5489 2.92705Z"
+                        fill=""
+                      />
+                      <path
+                        d="M24.5489 2.92705C24.8483 2.00574 26.1517 2.00574 26.4511 2.92705L31.0006 16.9291C31.1345 17.3411 31.5184 17.6201 31.9516 17.6201L46.6743 17.6201C47.643 17.6201 48.0458 18.8597 47.262 19.4291L35.3512 28.0828C35.0007 28.3375 34.8541 28.7888 34.9879 29.2008L39.5375 43.2029C39.8368 44.1242 38.7823 44.8903 37.9986 44.3209L26.0878 35.6672C25.7373 35.4125 25.2627 35.4125 24.9122 35.6672L13.0014 44.3209C12.2177 44.8903 11.1632 44.1242 11.4625 43.2029L16.0121 29.2008C16.1459 28.7888 15.9993 28.3375 15.6488 28.0828L3.73795 19.4291C2.95424 18.8597 3.35702 17.6201 4.32574 17.6201L19.0484 17.6201C19.4816 17.6201 19.8655 17.3411 19.9994 16.9291L24.5489 2.92705Z"
+                        fill=""
+                        fill-opacity="0"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_533_7684">
+                        <rect width="51" height="51" fill="" />
+                      </clipPath>
+                    </defs>
+                  </svg><div class="user6" id="userDiv6" style="display: none;">My Subscription</div></a>
+                  </li>
+            
+            
+            <!-- Followed -->
+                  <li>
+                    <svg  class="icon"
+                    class="group"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 50 50"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M33.3333 29.167C36.096 29.167 38.7455 30.2645 40.699 32.218C42.6525 34.1715 43.75 36.821 43.75 39.5837V41.667C43.75 42.7721 43.311 43.8319 42.5296 44.6133C41.7482 45.3947 40.6884 45.8337 39.5833 45.8337H10.4167C9.3116 45.8337 8.25179 45.3947 7.47039 44.6133C6.68899 43.8319 6.25 42.7721 6.25 41.667V39.5837C6.25 36.821 7.34747 34.1715 9.30097 32.218C11.2545 30.2645 13.904 29.167 16.6667 29.167H33.3333ZM44.6125 18.9191C44.9865 18.5415 45.4908 18.3211 46.022 18.3031C46.5532 18.285 47.0712 18.4707 47.47 18.8221C47.8687 19.1735 48.1181 19.664 48.1671 20.1933C48.216 20.7225 48.0609 21.2505 47.7333 21.6691L47.5583 21.867L41.6667 27.7587C41.3079 28.1174 40.8306 28.3328 40.3243 28.3647C39.818 28.3965 39.3175 28.2425 38.9167 27.9316L38.7208 27.7587L35.775 24.8128C35.3974 24.4388 35.177 23.9346 35.159 23.4034C35.141 22.8721 35.3267 22.3541 35.6781 21.9554C36.0294 21.5566 36.52 21.3072 37.0492 21.2582C37.5785 21.2093 38.1064 21.3644 38.525 21.692L38.7208 21.867L40.1937 23.3399L44.6125 18.9191ZM25 4.16699C27.7627 4.16699 30.4122 5.26446 32.3657 7.21796C34.3192 9.17147 35.4167 11.821 35.4167 14.5837C35.4167 17.3463 34.3192 19.9959 32.3657 21.9494C30.4122 23.9029 27.7627 25.0003 25 25.0003C22.2373 25.0003 19.5878 23.9029 17.6343 21.9494C15.6808 19.9959 14.5833 17.3463 14.5833 14.5837C14.5833 11.821 15.6808 9.17147 17.6343 7.21796C19.5878 5.26446 22.2373 4.16699 25 4.16699Z"
+                      fill=""
+                    />
+                    <path
+                      d="M33.3333 29.167C36.096 29.167 38.7455 30.2645 40.699 32.218C42.6525 34.1715 43.75 36.821 43.75 39.5837V41.667C43.75 42.7721 43.311 43.8319 42.5296 44.6133C41.7482 45.3947 40.6884 45.8337 39.5833 45.8337H10.4167C9.3116 45.8337 8.25179 45.3947 7.47039 44.6133C6.68899 43.8319 6.25 42.7721 6.25 41.667V39.5837C6.25 36.821 7.34747 34.1715 9.30097 32.218C11.2545 30.2645 13.904 29.167 16.6667 29.167H33.3333ZM44.6125 18.9191C44.9865 18.5415 45.4908 18.3211 46.022 18.3031C46.5532 18.285 47.0712 18.4707 47.47 18.8221C47.8687 19.1735 48.1181 19.664 48.1671 20.1933C48.216 20.7225 48.0609 21.2505 47.7333 21.6691L47.5583 21.867L41.6667 27.7587C41.3079 28.1174 40.8306 28.3328 40.3243 28.3647C39.818 28.3965 39.3175 28.2425 38.9167 27.9316L38.7208 27.7587L35.775 24.8128C35.3974 24.4388 35.177 23.9346 35.159 23.4034C35.141 22.8721 35.3267 22.3541 35.6781 21.9554C36.0294 21.5566 36.52 21.3072 37.0492 21.2582C37.5785 21.2093 38.1064 21.3644 38.525 21.692L38.7208 21.867L40.1937 23.3399L44.6125 18.9191ZM25 4.16699C27.7627 4.16699 30.4122 5.26446 32.3657 7.21796C34.3192 9.17147 35.4167 11.821 35.4167 14.5837C35.4167 17.3463 34.3192 19.9959 32.3657 21.9494C30.4122 23.9029 27.7627 25.0003 25 25.0003C22.2373 25.0003 19.5878 23.9029 17.6343 21.9494C15.6808 19.9959 14.5833 17.3463 14.5833 14.5837C14.5833 11.821 15.6808 9.17147 17.6343 7.21796C19.5878 5.26446 22.2373 4.16699 25 4.16699Z"
+                      fill=""
+                      fill-opacity="0"
+                    />
+                  </svg><a href="" style="display: inline;"><div class="user8" id="userDiv8" style="display: none;">Followed</div></a></li>
+            
+            
+              <!-- Profile -->
+                <li style="padding-left: px;"> 
+                    <svg  class="icon"
+                    
+                    width="1.9vw"
+                    height="1.9vw"
+                    viewBox="0 0 53 53"
+                    fill="#142b38"
+                    xmlns="http://www.w3.org/2000/svg" 
+                  >
+                    <path 
+                      d="M26.5 23.8502C30.8907 23.8502 34.45 20.2909 34.45 15.9002C34.45 11.5095 30.8907 7.9502 26.5 7.9502C22.1093 7.9502 18.55 11.5095 18.55 15.9002C18.55 20.2909 22.1093 23.8502 26.5 23.8502Z"
+                      fill=""
+                    />
+                    <path  
+                      d="M7.95001 47.7002C7.95001 37.4553 16.2551 29.1502 26.5 29.1502C36.7449 29.1502 45.05 37.4553 45.05 47.7002H7.95001Z"
+                      fill=""
+                    />
+                  </svg> 
+                  <a href="profile.html"><div class="user2" id="userDiv2" > Profile</div></a></li>
+            
+            
+            <!-- Help -->
+                 <li>
+                    <svg  class="icon"
+                    class="message"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 53 53"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M47.7 34.4502V13.2502C47.7 10.3231 45.3271 7.9502 42.4 7.9502H10.6C7.67288 7.9502 5.29999 10.3231 5.29999 13.2502V34.4502C5.29999 37.3773 7.67288 39.7502 10.6 39.7502H18.55L26.5 47.7002L34.45 39.7502H42.4C45.3271 39.7502 47.7 37.3773 47.7 34.4502ZM13.25 18.5502C13.25 17.0866 14.4364 15.9002 15.9 15.9002H37.1C38.5635 15.9002 39.75 17.0866 39.75 18.5502C39.75 20.0138 38.5635 21.2002 37.1 21.2002H15.9C14.4364 21.2002 13.25 20.0138 13.25 18.5502ZM15.9 26.5002C14.4364 26.5002 13.25 27.6866 13.25 29.1502C13.25 30.6138 14.4364 31.8002 15.9 31.8002H23.85C25.3135 31.8002 26.5 30.6138 26.5 29.1502C26.5 27.6866 25.3135 26.5002 23.85 26.5002H15.9Z"
+                      fill=""
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M47.7 34.4502V13.2502C47.7 10.3231 45.3271 7.9502 42.4 7.9502H10.6C7.67288 7.9502 5.29999 10.3231 5.29999 13.2502V34.4502C5.29999 37.3773 7.67288 39.7502 10.6 39.7502H18.55L26.5 47.7002L34.45 39.7502H42.4C45.3271 39.7502 47.7 37.3773 47.7 34.4502ZM13.25 18.5502C13.25 17.0866 14.4364 15.9002 15.9 15.9002H37.1C38.5635 15.9002 39.75 17.0866 39.75 18.5502C39.75 20.0138 38.5635 21.2002 37.1 21.2002H15.9C14.4364 21.2002 13.25 20.0138 13.25 18.5502ZM15.9 26.5002C14.4364 26.5002 13.25 27.6866 13.25 29.1502C13.25 30.6138 14.4364 31.8002 15.9 31.8002H23.85C25.3135 31.8002 26.5 30.6138 26.5 29.1502C26.5 27.6866 25.3135 26.5002 23.85 26.5002H15.9Z"
+                      fill=""
+                      fill-opacity="0"
+                    />
+                  </svg><a href="" style="display: inline;"><div class="user11" id="userDiv11" style="display: none;">Help</div></a>
+                </li>
+            
+            
+            
+            <!-- About Us -->
+                <li>
+                    <svg  class="icon"
+                    class="question-mark-circle"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 52 52"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M46.8 26.0002C46.8 37.4877 37.4875 46.8002 26 46.8002C14.5125 46.8002 5.20001 37.4877 5.20001 26.0002C5.20001 14.5127 14.5125 5.2002 26 5.2002C37.4875 5.2002 46.8 14.5127 46.8 26.0002ZM26 18.2002C25.041 18.2002 24.1998 18.7182 23.7463 19.5021C23.0273 20.745 21.4368 21.1698 20.1938 20.4508C18.9509 19.7318 18.5261 18.1413 19.2451 16.8983C20.5899 14.5737 23.1097 13.0002 26 13.0002C30.3079 13.0002 33.8 16.4924 33.8 20.8002C33.8 24.1964 31.6295 27.0856 28.6 28.1564V28.6002C28.6 30.0361 27.436 31.2002 26 31.2002C24.5641 31.2002 23.4 30.0361 23.4 28.6002V26.0002C23.4 24.5643 24.5641 23.4002 26 23.4002C27.436 23.4002 28.6 22.2361 28.6 20.8002C28.6 19.3643 27.436 18.2002 26 18.2002ZM26 39.0002C27.436 39.0002 28.6 37.8361 28.6 36.4002C28.6 34.9643 27.436 33.8002 26 33.8002C24.5641 33.8002 23.4 34.9643 23.4 36.4002C23.4 37.8361 24.5641 39.0002 26 39.0002Z"
+                      fill=""
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M46.8 26.0002C46.8 37.4877 37.4875 46.8002 26 46.8002C14.5125 46.8002 5.20001 37.4877 5.20001 26.0002C5.20001 14.5127 14.5125 5.2002 26 5.2002C37.4875 5.2002 46.8 14.5127 46.8 26.0002ZM26 18.2002C25.041 18.2002 24.1998 18.7182 23.7463 19.5021C23.0273 20.745 21.4368 21.1698 20.1938 20.4508C18.9509 19.7318 18.5261 18.1413 19.2451 16.8983C20.5899 14.5737 23.1097 13.0002 26 13.0002C30.3079 13.0002 33.8 16.4924 33.8 20.8002C33.8 24.1964 31.6295 27.0856 28.6 28.1564V28.6002C28.6 30.0361 27.436 31.2002 26 31.2002C24.5641 31.2002 23.4 30.0361 23.4 28.6002V26.0002C23.4 24.5643 24.5641 23.4002 26 23.4002C27.436 23.4002 28.6 22.2361 28.6 20.8002C28.6 19.3643 27.436 18.2002 26 18.2002ZM26 39.0002C27.436 39.0002 28.6 37.8361 28.6 36.4002C28.6 34.9643 27.436 33.8002 26 33.8002C24.5641 33.8002 23.4 34.9643 23.4 36.4002C23.4 37.8361 24.5641 39.0002 26 39.0002Z"
+                      fill=""
+                      fill-opacity="0"
+                    />
+                  </svg><a href="" style="display: inline;"><div class="user12" id="userDiv12" style="display: none;">About Us</div></a>
+                </li>
+            
+            
+            <!-- Privacy & Terms -->
+                <li>
+                  <svg class="icon"
+                  class="ic-baseline-security"
+                  width=""
+                  height=""
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M24 2L6 10V22C6 33.1 13.68 43.48 24 46C34.32 43.48 42 33.1 42 22V10L24 2ZM24 23.98H38C36.94 32.22 31.44 39.56 24 41.86V24H10V12.6L24 6.38V23.98Z"
+                    fill="#133039"
+                  />
+                </svg>
+                  <a href="" style="display: inline;"><div class="user13" id="userDiv13" style="display: none;">Privacy & Terms</div></a>
+                </li>
+            </ul>
+            
+            
+            
+            </div> <!-- sidebar div -->
+            
+
+            </div>
+
+        <div class="content2" id="main" style="padding-top: 50px; ">
+
+            <span>
+                <h1 style="    font-size: 2vw;
+                text-align: left;
+                margin-bottom: 10px;">Profile</h1>
+                <h1  style="    font-size: 1vw;
+                text-align: left;
+                margin-bottom: 20px; font-weight: 200;color: rgba(40, 111, 140, 1);">Profile / Notifications</h1>
+            </span>
+        </a>
+
+          </span>
+
+
+
+          <div class="common">
+
+        <p class="h1"> common </p>
+
+        <span class="span"><p style="font-size: 1.5vw;">General Notification</p>    <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider round2"></span>
+          </label>
+        </span>
+
+        <span class="span"><p style="font-size: 1.5vw;">sound</p>    <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider round2"></span>
+          </label>
+        </span>
+
+          </div>
+
+
+
+          <div class="common">
+
+            <p class="h1"> System & Services Update </p>
+    
+            <span class="span"><p style="font-size: 1.5vw;">App Updates</p>    <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round2"></span>
+              </label>
+            </span>
+    
+            <span class="span"><p style="font-size: 1.5vw;">Payment Request</p>    <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round2"></span>
+              </label>
+            </span>
+
+    
+              </div>
+
+
+
+              <div class="common">
+
+                <p class="h1">Others</p>
+        
+                <span class="span"><p style="font-size: 1.5vw;">New Service Available</p>    <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round2"></span>
+                  </label>
+                </span>
+        
+                <span class="span"><p style="font-size: 1.5vw;">New Tips Available</p>    <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round2"></span>
+                  </label>
+                </span>
+        
+        
+                  </div>
+            <!-- content 2 -->
+
+
+
+            <div class="clearfix">
+      
+                <button  type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <button  type="submit" class="signupbtn" id="save">Save</button>
+        
+        
+                
+              </div>
+              
+                        </div>
+
+
+            
+        </div>
+
+
+
+        
+<script>
+  function openNav() {
+    const sidebar = document.getElementById("mySidebar");
+    const main = document.getElementById("main");
+    const userDiv = document.getElementById("userDiv");
+  
+    const userDiv2 = document.getElementById("userDiv2");
+    const userDiv3 = document.getElementById("userDiv3");
+  
+  
+  
+    if (sidebar.style.width === "170px") { // Check if the sidebar is currently at 160px
+      sidebar.style.width = "250px"; // Expand to 250px
+      main.style.marginLeft = "0px";
+      userDiv.style.display = "block"; // Show the user div
+  
+  
+  // Show the user div
+      userDiv3.style.display = "block";   
+      userDiv7.style.display = "block";     
+      userDiv5.style.display = "block";     
+      userDiv9.style.display = "block"; 
+      userDiv6.style.display = "block"; 
+      userDiv8.style.display = "block"; 
+      userDiv2.style.display = "block"; 
+      userDiv11.style.display = "block"; 
+      userDiv12.style.display = "block"; 
+      userDiv13.style.display = "block";
+  
+      // userDiv4.style.display = "block"; 
+  
+      // userDiv10.style.display = "block"; 
+   
+  
+  
+    } else {
+      sidebar.style.width = "170px"; // Collapse to 50px
+      main.style.marginLeft = "0px";
+      userDiv.style.display = "none"; // Hide the user div
+  
+  
+      userDiv3.style.display = "none"; // Hide the user div
+      userDiv7.style.display = "none"; 
+      // userDiv4.style.display = "none"; 
+      userDiv5.style.display = "none"; 
+      userDiv9.style.display = "none"; 
+      userDiv6.style.display = "none"; 
+      userDiv8.style.display = "none"; 
+      userDiv2.style.display = "none"; 
+      // userDiv10.style.display = "none"; 
+      userDiv11.style.display = "none"; 
+      userDiv12.style.display = "none"; 
+      userDiv13.style.display = "none"; 
+  
+  
+  
+  
+  
+    }
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.getElementById("userDiv").style.display = "none"; // Hide the user div when closing
+  
+  document.getElementById("userDiv2").style.display = "none"; // Hide the user div when closing
+  document.getElementById("userDiv3").style.display = "none"; // Hide the user div when closing
+  document.getElementById("userDiv4").style.display = "none"; // Hide the user div when closing
+  
+  }
+  
+  // function toggleUserProfile() {
+  //   const userDiv = document.getElementById("userDiv");
+  //   userDiv.style.display = userDiv.style.display === "none" || userDiv.style.display === "" ? "block" : "none";
+  // }
+  </script>
+</body>
+</html>
