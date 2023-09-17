@@ -814,7 +814,7 @@ margin-bottom: 150px;
       background-color: #286F8C;
       color: white;
       padding: 14px 20px;
-      margin: 8px 40px 40px 0;
+      margin: 8px  40px ;
       border: none;
       cursor: pointer;
       /* width: 100%; */
@@ -823,6 +823,7 @@ margin-bottom: 150px;
       border-style: solid;
       /* border-color: var(--black, #000000); */
       border-width: 2px;
+  min-width: 106px;
     }
   
     .clearfix{
