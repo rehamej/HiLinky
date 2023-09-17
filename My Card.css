@@ -410,7 +410,7 @@ body {
       .signupbtn{
         background-color: #286F8C;
         color: white;
-        padding: 14px 20px;
+        padding: 14px 13px;
         margin: 8px  40px ;
         border: none;
         cursor: pointer;
@@ -429,4 +429,5 @@ body {
         display: flex;
         justify-content: center;
     min-width: 106px;
+    white-space: nowrap;
       }
