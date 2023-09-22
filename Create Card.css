@@ -579,6 +579,7 @@ background: #F0FAFB;
 min-width: 167px;
 min-height: 96px;
 display: flex;
+gap: 5px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -590,3 +591,61 @@ display: flex;
   .file-input:checked + label svg {
     border: 2px solid #286F8C;
   }
+
+
+  /* input[type="file"] {
+    display: none;
+} */
+
+/* .custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+} */
+
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  width: fit-content;
+  content: 'Upload your photo';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(top, #f9f9f9, #e3e3e3);
+  /* border: 1px solid #999; */
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  /* text-shadow: 1px 1px #fff; */
+  font-weight: 700;
+  font-size: 1.3vw;
+  margin: 0 auto;
+  gap: 5px;
+}
+
+.UpSec::before{
+  content: 'Upload portfolio';
+  position: relative; top: 15px;
+}
+/* .custom-file-input:hover::before {
+  border-color: black;
+} */
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+.Edit{
+  background-color:#EF6358;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+  border-radius: 15px;
+  min-width: 70px;
+}
