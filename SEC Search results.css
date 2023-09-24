@@ -350,6 +350,7 @@ body {
             grid-area: content2;
             background-color: white;
             min-width: max-content;
+            padding-right: 30px;
 
         }
 
