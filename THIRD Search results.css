@@ -239,7 +239,7 @@ body {
         
             display: grid;
     
-        grid-template-columns: 0.34fr 2fr;
+        grid-template-columns: 0.5fr 2fr;
             grid-template-rows:  7fr
              ;
         
@@ -349,6 +349,8 @@ body {
         .content2{
             grid-area: content2;
             background-color: white;
+            /* padding-left: 60px; */
+            /* padding-right: 60px; */
 
         }
     
@@ -613,7 +615,7 @@ input[type=text], input[type=password] {
         
           /* Add padding to container elements */
           .container2 {
-            padding: 40px 30px 30px 20px;
+            padding: 25px 30px 30px 20px;
             border-radius: 164px;
             
           }
@@ -643,8 +645,8 @@ input[type=text], input[type=password] {
           
           /* Modal Content/Box */
           .modal-content2 {
-            background-color: #286F8C;
-            background-image: url(https://i.ibb.co/JWZwZCH/image.png);
+            background-color: #fff;
+    background-image: url(https://i.ibb.co/nRRvxyf/78883146257.png);
             margin: 4% auto 1% auto; /* 5% from the top, 15% from the bottom and centered */
 
             border-radius: 8px;
@@ -773,3 +775,105 @@ input[type=text], input[type=password] {
             text-decoration: underline;
             position: relative;
           }
+
+
+
+
+          .posts{
+            width:  22.203125vw;
+height:  25.875vw;
+border-radius: 15px;
+border: 1px solid var(--gradient, #286F8C);
+          }
+
+
+          .links > li > button > svg{
+            min-height: 18.44px;
+            min-width: 18.44px;
+
+          }
+          .in{
+            min-height: 18.44px;
+            min-width: 18.44px;
+          }
+
+
+          .cards{
+            margin-bottom: 10px;
+            position: relative;
+            bottom: 34%;
+            width:  22.203125vw;
+height:  25.875vw;
+            background-color: white;
+            /* margin: 52px 220px 0 111px; */
+            display: flex;
+            align-items: stretch;
+            padding: 8px;
+            flex-direction: column;
+            justify-content: space-between;
+            min-width: 200px;
+            min-height: 268px; 
+            border-radius: 15px;
+            border: 2px solid #286F8C;
+                }
+        
+                .cards > span{
+                  display: flex;
+                  align-items: center;
+                  gap: 10px;
+                }
+        
+                .photo{
+                  border-radius: 50%;
+            border-style: solid;
+            border-color: var(--primary, #286f8c);
+            border-width: 1.5px;
+            width:  4.6875vw;
+            height:  4.6875vw;
+                }
+        
+                .diamond{
+                  
+            padding-bottom: 17px;
+                }
+        
+                .title {
+                  background: var(--nav-bar, rgba(74, 170, 198, 0.2));
+                  border-radius: 15px;
+                  border-style: solid;
+                  border-color: var(--primary, #286f8c);
+                  border-width: 0.5px;
+                  padding: 2px 8px 2px 8px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  position: relative;
+                  color: #000000;
+                  font: 600 0.46875vw "Poppins", sans-serif;
+                  font-size: 0.46875vw;
+                  white-space: nowrap;
+                }
+
+                .orange-1,
+                .orange-1 * {
+                  box-sizing: border-box;
+                  
+                }
+                .orange-1 {
+                  border-radius: 8px;
+                  /* width: 41.3vw;
+                  height: 37vw;; */
+                  position: relative;
+                  overflow: hidden;
+                  box-shadow: 6px 6px 30px 0px rgba(20, 43, 56, 0.3);
+                  margin: 0 auto;
+                  width: 20.3vw;
+                  height: 30vw;
+                  min-width: 176px;
+                  min-height: 211px;
+                }
+                
+
+
+
+                
