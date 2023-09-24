@@ -264,6 +264,7 @@ body {
             background-color:white;
             /* border-radius: 9px; */
             min-width: 97px;
+            
 
         }
     
@@ -353,6 +354,7 @@ body {
             grid-area: content2;
             background-color: white;
             min-width: max-content;
+            padding-left: 30px;
 
         }
 
@@ -442,7 +444,7 @@ body {
 
         .content4{
             display: flex;
-            margin: 50px 90px 50px 90px;
+            margin: 50px 90px 0px 90px;
             align-items: center;
             width: -webkit-fill-available;
             flex-direction: row;
@@ -606,7 +608,7 @@ body {
 
           .content5{
             display: flex;
-            margin: 80px 90px 50px 90px;
+            margin: 30px 90px 50px 90px;
             align-items: center;
             width: -webkit-fill-available;
             flex-direction: row;
