@@ -85,6 +85,10 @@ body {
     .sidebar > img {
       right: 0 !important;
     }
+    .inline{
+      display: block !important;
+    }
+    
 }
 .round {
             background: #b4b4b4;
