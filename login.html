@@ -44,18 +44,20 @@
      
         
         <div class="input-container">
-            <input placeholder="Email or username" type="text" id="name">
+            <input placeholder="Email or username" type="text" id="email" name="email">
         </div>
 
         
         <div class="input-container">
-            <input placeholder="password" type="password" id="email" required>
+            <input placeholder="password" type="password" id="password" name="password" required>
         </div>
 
+        <!-- forgot password link -->
 
-        <a href="profile.html">
-        <button  class="submit" type="submit" style="   padding: 8px 16px ;  width:  25.716vw;
+        <a href="#" id="forgotPassword" style="color: blue; text-decoration: underline; font-size: large;">Forgot Password</a>
+        <button id="submit"  class="submit" type="submit" style="   padding: 8px 16px ;  width:  25.716vw;
         height: 59px;background-color: #286F8C; cursor: pointer;color: white;    min-width: 171px;">Continue</button></a>
+
 
 
 <p class="signup-link">
@@ -139,37 +141,88 @@
 </div>
 
 </div>
+        <!-- Import Firebase Auth -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js";
+        import { getAuth, sendPasswordResetEmail, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.2.0/firebase-auth.js";
 
+        const firebaseConfig = {
+        apiKey: "AIzaSyB7j2HFNE4pU13o9Y0pCgCEtAMvm-2dqzc",
+        authDomain: "hilinky-test.firebaseapp.com",
+        databaseURL: "https://hilinky-test-default-rtdb.firebaseio.com",
+        projectId: "hilinky-test",
+        storageBucket: "hilinky-test.appspot.com",
+        messagingSenderId: "130850188106",
+        appId: "1:130850188106:web:c94f56d874b9ca81c0efb3",
+        measurementId: "G-33N6M2M5S9"
+        };
 
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
 
+        // Get the Firebase auth instance
+        const auth = getAuth(app);
 
-
-    <script>
         const form = document.getElementById('form');
         const messageDiv = document.getElementById('message');
+
+            // Check if the user is logged in or not
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                // User is signed in. The "Keep Me Signed In" feature is automatically handled by Firebase.
+                window.location.href = "home3.html";
+            } else {
+                // User is signed out.
+                console.log("User is not logged in.");
+            }
+        });
 
         form.addEventListener('submit', function(event) {
             event.preventDefault();
 
-            const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
 
-            if (name && email) {
-                messageDiv.textContent = 'Registration completed successfully!';
+            if (email && password) {
+                // Create a new user with email and password
+                signInWithEmailAndPassword(auth, email, password)
+                    .then((userCredential) => {
+                        const user = userCredential.user;
+                        messageDiv.textContent = 'Registration completed successfully!';
+                        // go to home
+                        window.location.href = "home3.html";
+                    })
+                    .catch((error) => {
+                        // Handle registration errors
+                        messageDiv.textContent = 'Registration failed: ' + error.message;
+                    });
             } else {
                 messageDiv.textContent = 'Please fill out all fields.';
             }
         });
-
 
         const forgotPasswordLink = document.getElementById('forgotPassword');
 
         forgotPasswordLink.addEventListener('click', function(event) {
             event.preventDefault();
 
-            // Display reset password message
-            messageDiv.textContent = 'Reset password email has been sent.';
+            const email = document.getElementById('email').value;
+
+            if (email) {
+                // Send a password reset email
+                sendPasswordResetEmail(auth, email)
+                    .then(() => {
+                        messageDiv.textContent = 'Reset password email has been sent.';
+                    })
+                    .catch((error) => {
+                        // Handle reset password errors
+                        messageDiv.textContent = 'Password reset failed: ' + error.message;
+                    });
+            } else {
+                messageDiv.textContent = 'Please enter your email address.';
+            }
         });
     </script>
+
 </body>
 </html>
